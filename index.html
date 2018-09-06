@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+
+
+<!--<link rel="stylesheet" type="text.css" href="../Assets/reset.css">-->
+<link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
+ 
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header class="header"><h1>Crystals Collector!</h1></header>
+
+    <main>
+
+    <div class="instructions">
+
+        <h2>Instructions:</h2>
+        <p>You will be given a random number at the begining of the game.</p>
+        <p>
+            There are four crystals below. By clicking on a crystal, you will add a specific number of points
+            to your total score.
+        </p>
+        <p>
+            You win by matching your total score to the random number,you lose the game if your score goes above the random number.
+        </p>
+        <p>
+           The value of each crystal is hidden until you click on it.
+        </p>
+        <p>
+            Each time when the game, the game will change the values of each crystal.
+        </p><br>
+    </div>
+
+    
+
+    
+    <div class= "topRow">
+    <div class="random-number" id="randNum"></div>
+    
+
+    <div class="wins-loses">
+        <p>Wins:</p>
+        <p id="wins">0</p>
+        <p>Losses:</p>
+        <p id="losses">0</p>
+    </div>
+    </div>
+
+    <br><br>
+    <div class="crystal-array">
+        <button class="colorGem" id="amethyst"><img src="assets/images/amethyst.jpg" alt=""></button>
+        <button class="colorGem" id="emerald"><img src="assets/images/emerald.JPG" alt=""></button>
+        <button class="colorGem" id="ruby"><img src="assets/images/ruby.jpg" alt=""></button>
+        <button class="colorGem" id="sapphire"><img src="assets/images/sapphire.jpg" alt=""></button>
+    </div>
+
+    <div class="total-score">
+        <div>Your total score is:</div>
+        <br>
+        <div id="totalScore">0</div>
+    </div>
+
+        
+    </main>
+
+   
+<script type="text/javascript" src="./Assets/javascript/game.js"></script>
+
+</body>
+</html>
